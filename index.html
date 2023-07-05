@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=======================  CSS  =======================-->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+
+        <!--=======================  Unicons  =======================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/thinline.css">
+        <script src="https://unicons.iconscout.com/release/v4.0.8/script/monochrome/bundle.js"></script>
+
+        <!--=======================  Swiper CSS  =======================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!--=======================  Animatin Lotties  =======================-->
+
+        <!--=======================  Animatin Scroll Script  =======================-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        
+        <!--=======================  Scroll Animatin  =======================-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        
+        <!--=======================  Website Icon  =======================-->
+        <link rel="icon" type="image/svg+xml" href="/assets/img/project.png" />
+        
+        <!--=======================  Website Title  =======================-->
+        <title>Responsive Portfolio</title>
+    </head>
+
+    <body>
+        
+        <div class="title">
+            <!--=======================  Header  =======================-->
+            <header class="header" id="header">
+                <nav class="nav container">
+                    <a href="#" class="nav__logo">Lhacen Med</a>
+
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list grid">
+                            <li class="nav__item">
+                                <a href="#home" class="nav__link active-link">
+                                    <i class="uil uil-estate nav__icon"></i> Home
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#about" class="nav__link">
+                                    <i class="uil uil-user nav__icon"></i> About Me
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#skills" class="nav__link">
+                                    <i class="uil uil-file-alt nav__icon"></i> Skills
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#services" class="nav__link">
+                                    <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#portfolio" class="nav__link">
+                                    <i class="uil uil-scenery nav__icon"></i> Portfolio
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#contact" class="nav__link">
+                                    <i class="uil uil-message nav__icon"></i> Contact Me
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- <i class="uil uil-times nav__close" id="nav-close"></i> -->
+                    </div>
+
+                    <!-- <div class="nav__btns">
+                        <!-- Theme Change Button -->
+                        <!-- <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                        <div class="nav__toggle" id="nav-toggle">
+                            <i class="uil uil-apps"></i>
+                        </div>
+                    </div> -->
+                </nav>
+            </header>
+            
+            <!--=======================  Main  =======================-->
+            <main class="main">
+                <!--=======================  Home  =======================-->
+                <section class="home section" id="home">
+                    <div class="home__container container grid">
+                        <div class="home__content grid">
+                            <div class="home__data">
+                                <h1 class="home__title__black">Hi, I'm <span class="my-name-black">Lhacen</span></h1>
+                                <h1 class="home__title">Hi, I'm <span class="my-name">Lhacen</span></h1>
+                                <h3 class="home__subtitle__black">Fullstack web developer</h3>
+                                <h3 class="home__subtitle">Fullstack web developer</h3>
+                                <p class="home__description__black">High level experience in web design and development knowledge, producing quality work.</p>
+                                <p class="home__description">High level experience in web design and development knowledge, producing quality work.</p>
+                                <a href="#contact" class="button button--flex" draggable="false">
+                                    Contact Me <i class="uil uil-message button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="home__scroll">
+                            <a href="#about" class="home__scroll-button button--flex">
+                                <span class="home__scroll-name"></span>
+                                <div id="animContainer"></div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!--=======================  About  =======================-->
+                <div class="front-page" id="about">
+                    <div class="intro-text">
+                        <h1 class="ftitle">Hi!</h1>
+                        <h2 class="sub-title">I'm Lhacen.</h2>
+                    </div>
+                    <img src="assets/img/ex-circle.svg" alt="" class="exc__img">
+                    <div class="blend"></div>
+                    <video class="about__video" src="assets/img/aboutme.mp4" autoplay="false"></video>
+                </div>
+                
+                <div class="second-page">
+                    <h2>Second Page</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                        Repellat ipsam tenetur fuga quidem nam? Laudantium quasi laboriosam <br>
+                        tempora atque quis, hic quisquam iste quos consectetur illum tenetur quas? <br>
+                        Dolorum eveniet dicta perferendis illo.
+                    </p>
+                </div>
+            </main>
+
+        </div>
+
+        <div id="preloader">
+            <div class="loading__text">
+                LOADING...
+            </div>
+        </div>
+        
+
+
+        <!--=======================  Scroll Animatin JS  =======================-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
+        <!--=======================  Swiper JS  =======================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=======================  Main JS  =======================-->
+        <script>
+            AOS.init(); // <div data-aos="fade-up"></div>
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.11.0/lottie.min.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <script>
+            // Common reveal options to create reveal animations
+            ScrollReveal({
+                // reset: true,
+                distance: '60px',
+                duration: 2500,
+                delay: 400
+            });
+            
+            // Target elements, and specify options to create reveal animations
+            // ScrollReveal().reveal('.main', { delay: 3480 });
+            // ScrollReveal().reveal('.section__subtitle', { delay: 600, origine: 'bottom', interval: 200 });
+        </script>
+        
+    </body>
+</html>
